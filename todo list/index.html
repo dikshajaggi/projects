@@ -1,0 +1,68 @@
+<html>
+<head>
+<title> to-do list app</title>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+
+    <div class="main">
+        <header>
+            <h2> <span>TO-DO </span> LIST </h2>
+        </header>
+         
+        <div class="labeldiv">
+            <label for ="tab-1"> TODAY </label>
+            <label for ="tab-2"> TOMORROW </label>
+            <label for ="tab-3"> UPCOMING </label>
+            <div class="line"></div>
+        </div>
+
+        <form>
+        <ul class="tab">   
+        <li>
+        <input type="radio" id="tab-1" value="tab-1" name="todo" checked />
+            <div class="content">
+                <div class="bg"> <h1>TODAY</h1> </div>
+                <p id="1"></p>
+                <input type="text" class="input1" placeholder="ENTER TASK" >
+                <button class="add" type="button"  onclick="add1()"><i class="fa fa-plus-circle"></i>
+                </button>
+                <div class="displaymain">
+                    <ul class="ulclass"> </ul>
+                </div>
+            </div>
+        </li>
+            
+        <li>
+        <input type="radio" id="tab-2" value="tab-2" name="todo"/>
+            <div class="content">
+                <div class="bg"> <h1>TOMORROW</h1> </div>
+                <p id="2"></p>
+                <input type="text" class="input2" placeholder="ENTER TASK"> 
+                <button class="addt" type="button" onclick="add2()"><i class="fa fa-plus-circle"></i>
+                </button>
+                <div class="displaymain2">
+                    <ul class="ulclass"> </ul>
+                </div>
+            </div>
+        </li>
+            
+        <li>
+        <input type="radio" id="tab-3" value="tab-3" name="todo"/>
+            <div class="content">
+                <div class="bg"> <H1>UPCOMING</H1> </div>
+                <p id="3"> This Week / Later </p>
+                <input type="text" class="input3" placeholder="ENTER TASK">
+                <button class="addu" type="button"  onclick="add3()"><i class="fa fa-plus-square"></i></button>
+                <div class="displaymain3">
+                    <ul class="ulclass"> </ul>
+                </div>
+            </div>
+        </li>   
+        </ul>
+        </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
