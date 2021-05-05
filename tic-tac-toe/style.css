@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: serif;
+}
+body{
+    
+    background-color: #F5FFFA;
+}
+.mainScreen{
+    
+    position:relative;
+    height:540px;
+    width:350px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color:#F5FFFA;
+    border-radius: 25px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -6px -6px 30px rgba(255,255,255,0.5),
+                    6px 6px 30px rgba(0,0,0,0.2);
+}
+.wrapper{
+    
+    display:none;
+    position:relative;
+    height:540px;
+    width:350px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #F5FFFA;
+    border-radius: 25px;
+    box-shadow: -6px -6px 30px rgba(255,255,255,0.5),
+                    6px 6px 30px rgba(0,0,0,0.2);
+}
+
+.container{
+    
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height:240px;
+    width:240px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    grid-gap: 2px 2px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color:#4834d4;
+    background-color: #F5FFFA;
+    border-radius: 25px;
+    box-shadow: -6px -6px 25px rgba(255,255,255,0.2),
+                    6px 6px 30px rgba(0,0,0,0.2);
+}
+#box-1,#box-2,#box-3,#box-4,#box-5,#box-6,#box-7,#box-8,#box-9{
+    background-color: #F5FFFA;
+}
+
+.box{
+    font-size:40px;
+}
+
+.shadow{
+    
+    
+    margin:10px;
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: #F5FFFA;
+    box-shadow: inset -4px -4px 10px rgba(255,255,255,0.2),
+                   inset 4px 4px 20px rgba(0,0,0,0.2);
+}
+
+.options{
+    background-color: aliceblue;
+    display:none;
+    padding:2px;
+}
+
+#play1 , #play2{
+    
+   height:40px;
+   width:200px;
+   border-radius: 25px;
+   background-color: #F5FFFA;
+   border-color: transparent;
+   box-shadow: inset -4px -4px 10px rgba(255,255,255,0.2),
+                   inset 4px 4px 20px rgba(0,0,0,0.2);
+   position:relative;
+   font-size:20px;
+   color:#4834d4;
+   font-weight: bolder;
+}
+
+h1{
+    color:#4834d4;
+}
+
+#play2{
+    
+    position:relative;
+    top:480px;
+    left:22%;
+}
+
+.playerInfo , #welcome{
+    
+    position:relative;
+    left:15%;
+    top:10px;
+    height:40px;
+    width:250px;
+    border-radius: 25px;
+    background-color: #F5FFFA;
+    border-color: transparent;
+    box-shadow: inset -4px -4px 10px rgba(255,255,255,0.2),
+                   inset 4px 4px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    font-size:20px;
+    font-weight: bolder;
+    padding-top:8px;
+    color:#4834d4;
+}
+
+.playerInfo{
+    display:none;
+}
+
+#play1:hover , #play2:hover , .playerInfo:hover , .shadow:hover{
+      box-shadow: -4px -4px 15px rgba(255,255,255,0.2),
+                    4px 4px 15px rgba(0,0,0,0.2);
+}
+
+.mainscreen:hover, .wrapper:hover , .container:hover{
+     box-shadow: inset -6px -6px 10px rgba(255,255,255,0.5),
+                    inset 6px 6px 20px rgba(0,0,0,0.05);
+}
+
+#restart{
+    
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:240px;
+    height:150px;
+    background-color:#4834d4;
+    color:#F5FFFA;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    display:none;
+    border-radius: 25px;
+    box-shadow: inset -6px -6px 15px rgba(255,255,255,0.3),
+                   inset 7px 7px 20px rgba(0,0,0,0.3);
+    font-weight: bold;
+    font-size:18px;
+}
+
+#yes , #no{
+    
+    width:120px;
+    height:28px;
+    border-radius: 25px;
+    background-color: #F5FFFA;
+    border-color: transparent;
+    font-weight: bolder;
+    font-size:14px;
+    box-shadow: inset -4px -4px 10px rgba(255,255,255,0.2),
+                   inset 4px 4px 20px rgba(0,0,0,0.2);
+}
+
+#yes:hover , #no:hover{
+    
+    background-color: #ced6e0;
+}
