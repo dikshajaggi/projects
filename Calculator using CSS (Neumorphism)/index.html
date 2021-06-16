@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body >
+  <div class="calculator">
+    <form name=calc>
+        
+        <input type="text" name="Rectangle_4" id="Rectangle_4">
+        <br>
+        <br>
+        <br>
+        <div class="row1">
+        <input type="button" value='9' name="9" onclick="calc.Rectangle_4.value += '9'">
+        <input type="button" value='8' name="8" onclick="calc.Rectangle_4.value += '8'">
+        <input type="button" value='7' name="7" onclick="calc.Rectangle_4.value += '7'">
+        <input type="button" id="change" value='-' name="_" onclick="calc.Rectangle_4.value += '-'">
+        </div>
+        <br>
+        
+        <div class="row2">
+        <input type="button" value='6' name="6" onclick="calc.Rectangle_4.value += '6'">
+        <input type="button" value='5' name="5" onclick="calc.Rectangle_4.value += '5'">
+        <input type="button" value='4' name="4" onclick="calc.Rectangle_4.value += '4'">
+        <input type="button"  id="change" value='+' name="+" onclick="calc.Rectangle_4.value += '+'">
+        </div>
+        <br>
+        
+        <div class="row3">
+        <input type="button" value='3' name="3" onclick="calc.Rectangle_4.value += '3'">
+        <input type="button" value='2' name="2" onclick="calc.Rectangle_4.value += '2'">
+        <input type="button" value='1' name="1" onclick="calc.Rectangle_4.value += '1'">
+        <input type="button"  id="change" value='x' name="*" onclick="calc.Rectangle_4.value += '*'">
+        </div>
+        <br>
+        
+        <div class="row4">
+        <input type="button" value='0' name="0" onclick="calc.Rectangle_4.value += '0'">
+        <input type="button" value='.' name="." onclick="calc.Rectangle_4.value += '.'">
+        <input type="button" value='=' name="=" onclick="calc.Rectangle_4.value = eval(calc.Rectangle_4.value)">
+        <input type="button"  id="change" value='/' name="/" onclick="calc.Rectangle_4.value += '/'">
+        </div>
+        <br>
+        <br>
+        
+         <input type="button" value='CLEAR'id="clear" name="clear" onclick="calc.Rectangle_4.value = '' ">
+    </form>    
+    </div>    
+  </body>
+</html>
