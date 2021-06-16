@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Gradient Generator </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="card">
+                <div class="card1">
+                    <div class="input">
+                        <input class="color1" type="color" value="#0C8CF3">
+                        <input class="color2" type="color" value="#920CF3">
+                    </div>
+                    <h4>Choose style</h4>
+                    <div class="types">
+                        <button id = "1" onclick ="choose(this.id)" class="button">Linear</button>
+                        <button id = "2" onclick ="choose(this.id)" class="button">Radial</button>
+                    </div>
+                </div>
+                <div class="card2">
+                    <span class="css"></span>
+                    <button class="button2" onclick="copytext()">Copy</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
