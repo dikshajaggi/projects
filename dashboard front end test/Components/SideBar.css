@@ -1,0 +1,27 @@
+.wrapper1{
+    flex:1;
+    background-color: #1F2025;
+    height: 100vh;
+    border-right: 1px solid #2B2D33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.active{
+    position: relative;
+    background-color: #2E9CFD;
+    height:25px;
+    width:6px;
+    top:22.5px;
+    right:-32.5px;
+}
+.icons{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.lasticon{
+    margin-top: 10px;
+}
