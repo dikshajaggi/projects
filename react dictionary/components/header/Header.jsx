@@ -3,7 +3,7 @@ import './Header.css';
 import {createTheme,ThemeProvider, TextField, MenuItem } from '@material-ui/core';
 import categories from '../data/category';
 
-const Header = ({category , setcategory, word , setword, LightTheme}) =>{
+const Header = ({category , setcategory, word , setword, setMeanings, LightTheme}) =>{
     const darkTheme = createTheme({
         palette: {
             primary:{
@@ -16,6 +16,7 @@ const Header = ({category , setcategory, word , setword, LightTheme}) =>{
       const handlechange = (Language) =>{
         setcategory(Language);
         setword("");
+        setMeanings([]);
       }
 
     return (
@@ -51,7 +52,7 @@ const Header = ({category , setcategory, word , setword, LightTheme}) =>{
             
         </div>
     </div>
-    )
-}
+    );
+};
 
 export default Header;
