@@ -28,7 +28,7 @@ function App() {
 
   const dictionaryApi = async() => {
     try{
-      const data = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
+      const data = await axios.get( `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
       setmeanings(data.data);
     }
     catch(error){
@@ -39,36 +39,39 @@ function App() {
   console.log(meanings);
 
   useEffect(() =>{
-    dictionaryApi([word, category]);
-  }, []);
-  return <div className="App" style={{
-    height: "100vh",
-    backgroundColor: LightTheme ? "#fff" : "#282c34",
-    color: LightTheme ? "black" : "white",
-    transition: "all 0.5s linear"}}>
-
-
-    <Container maxWidth="md" style={{
-          display: "flex",
-          flexDirection: "column",
-          height: "100vh",
-          justifyContent: "space-evenly",
-        }}> 
-         <div
-          style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}
-        >
-          <span>{LightTheme ? "Dark" : "Light"} Mode</span>
-          <Mode
-            checked={LightTheme}
-            onChange={() => setLightTheme(!LightTheme)}
-          />
-        </div>
-
-        <Header category={category}  setcategory={setcategory} word={word} setword={setword} LightTheme={LightTheme}/> 
-
-        {meanings && (<Definitions word={word} category={category} meanings={meanings} LightTheme={LightTheme}/>)}
-    </Container>
-  </div>;
+    dictionaryApi();
+  }, [word, category]);
+  
+  return (
+    <div className="App" style={{
+      height: "100vh",
+      backgroundColor: LightTheme ? "#fff" : "#282c34",
+      color: LightTheme ? "black" : "white",
+      transition: "all 0.5s linear"}}>
+  
+  
+      <Container maxWidth="md" style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100vh",
+            justifyContent: "space-evenly",
+          }}> 
+           <div
+            style={{ position: "absolute", top: 0, right: 15, paddingTop: 10 }}
+          >
+            <span>{LightTheme ? "Dark" : "Light"} Mode</span>
+            <Mode
+              checked={LightTheme}
+              onChange={() => setLightTheme(!LightTheme)}
+            />
+          </div>
+  
+          <Header category={category}  setcategory={setcategory} word={word} setword={setword} LightTheme={LightTheme}/> 
+  
+          {meanings && (<Definitions word={word} category={category} meanings={meanings} LightTheme={LightTheme}/>)}
+      </Container>
+    </div>
+  );
 }
 
 export default App;
